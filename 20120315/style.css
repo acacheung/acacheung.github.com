@@ -1,0 +1,99 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#site-header {
+background-image: linear-gradient(bottom, rgb(15,15,15) 0%, rgb(58,59,59) 100%);
+background-image: -o-linear-gradient(bottom, rgb(15,15,15) 0%, rgb(58,59,59) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(15,15,15) 0%, rgb(58,59,59) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(15,15,15) 0%, rgb(58,59,59) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(15,15,15) 0%, rgb(58,59,59) 100%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(15,15,15)),
+	color-stop(1, rgb(58,59,59))
+);}
+
+#wrapper {background-image: linear-gradient(bottom, rgb(15,15,15) 0%, rgb(58,59,59) 100%);
+background-image: -o-linear-gradient(bottom, rgb(15,15,15) 0%, rgb(58,59,59) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(15,15,15) 0%, rgb(58,59,59) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(15,15,15) 0%, rgb(58,59,59) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(15,15,15) 0%, rgb(58,59,59) 100%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(15,15,15)),
+	color-stop(1, rgb(58,59,59))
+);}
+
+#header-wrapper {margin-left: auto; margin-right: auto; width: 900px;}
+#content {margin-left: auto; margin-right: auto; width: 900px;}
+
+.logo {display:block; margin-left:auto; margin-right:auto; padding-top:2em; padding-bottom:1em;}
+#donate-container {position:relative;}
+#join {position:absolute; top:.75em; left:17em;}
+.donate {position:absolute; top:-.75em; margin-left:.5em;}
+.arrow {margin-left:1em;}
+.people { margin-left:auto; margin-right:auto; display:block; margin-bottom:1em;}
+.social {position:fixed; left:-15px;}
+
+#main-nav li {display: inline; list-style-type: none; font-size:1.25em; font-family: 'Cabin Condensed', sans-serif; text-transform:uppercase;}
+#main-nav {margin-top:2em; background-color:#8DC63F; border-top-left-radius:10px; border-top-right-radius:10px; width: 550px; margin-left: auto; margin-right: auto; padding-left:5em; padding-top:.5em; padding-bottom:.5em;}
+#main-nav li a {text-decoration:none; color:#414042; padding-right: 20px; padding-left:20px;padding-top:.5em; padding-bottom:.5em;}
+#main-nav li a:hover {background-color:#ADD366;}
+
+#content {padding-top:2em;}
+
+#why {padding-bottom:3em;}
+
+p {color:#E6E7E8; font-size:1em; font-family: 'Cabin Condensed', sans-serif; line-height:30px; margin-bottom:1em;}
+.highlight {font-size:2em; color:#8DC63F; font-family: 'Cabin Condensed', sans-serif; line-height:30px;}
+h1 {font-size:2em; color:#8DC63F; font-family: 'Cabin Condensed', sans-serif; line-height:30px;}
+
+
+
+

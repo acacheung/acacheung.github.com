@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Friday Homework</title>
+	<meta name="viewport" content="width=1024">
+    <link rel="stylesheet" href="dist/coderdeck-core.min.css" type="text/css">
+
+	<link rel="stylesheet" id='style-theme-link' href="src/css/coderdeck.css" type="text/css" >
+
+	<script src='dist/jquery.min.js'></script>
+	<script src="dist/modernizr.js"></script>	
+
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+
+	<!-- Replace path with correct path to Modernizr file. -->
+
+	<script src='dist/jquery.min.js'></script>
+	<script src="dist/modernizr.js"></script>
+</head>
+</head>
+<body class="deck-container">
+
+<script type='text/coderdeck' id='coderdeck-default'>
+  <html>
+    <head>
+      <script src='src/jquery.min.js'>SCRIPTEND
+    </head>
+    <body>
+	    CODE
+    </body>
+</html>
+</script>
+
+
+<script type='text/coderdeck' id='coderdeck-style-example'>
+	<html>
+		<title>test</title>
+		<style>
+			CODE
+		</style>
+		<body>
+			<h1>I'm a H1 heading</h1>
+			<h2>I'm a H2 heading</h2>
+			<h3>Pargraph of text &lt;p&gt; here</p>
+			<div class='stuff'>I'm a div &lt;div&gt; with class "stuff"</div>
+			<div id='my-div'>I'm a &lt;div&gt; with id "my-div"</div>
+		</body>
+	</html>
+</script> 	
+
+<article class="slide slide-list">
+	<h2>Homework Review</h2>
+	<script>
+(function($){
+ 
+    $.fn.shuffle = function() {
+ 
+        var allElems = this.get(),
+            getRandom = function(max) {
+                return Math.floor(Math.random() * max);
+            },
+            shuffled = $.map(allElems, function(){
+                var random = getRandom(allElems.length),
+                    randEl = $(allElems[random]).clone(true)[0];
+                allElems.splice(random, 1);
+                return randEl;
+           });
+ 
+        this.each(function(i){
+            $(this).replaceWith($(shuffled[i]));
+        });
+ 
+        return $(shuffled);
+ 
+    };
+ 
+})(jQuery);
+
+function shuffleHomework(amt) {
+	if(amt <= 0) return;
+	$("#homework li").shuffle();
+	setTimeout(function() { shuffleHomework(amt - 1); },200);
+}
+
+	</script>
+	<a href='javascript:shuffleHomework(10);'>Shuffle</a>
+	<ul id='homework'>
+		<li><a href='http://zacarroll.github.io/homework/'>Zac Carroll</a></li>
+		<li><a href='http://kjcatz.github.io/homework/'>Karyll Catubig</a></li>
+		<li><a href='http://luciac.github.io/homework/'>Lucia Conchello</a></li>
+		<li><a href='http://samday234.github.io/homework/'>Sam Day</a></li>
+		<li><a href='http://pmgill.github.io/homework/'>Pauline Gill</a></li>
+		<li><a href='http://tezzica.github.io/homework/'>Tess Hughes</a></li>
+		<li><a href='http://rachelclaire.github.io/homework/'>Rachel Ladine</a></li>
+		<li><a href='http://eblee.github.io/homework/'>Esther Lee</a></li>
+		<li><a href='http://dfmonteiro2.github.io/homework/'>Douglas Monteiro</a></li>
+		<li><a href='http://montakan.github.io/homework/'>Montakan Namthong</a></li>
+		<li><a href='http://yoongramcan.github.io/homework/'>Pink Nye</a></li>
+		<li><a href='http://krystalperez.github.io/homework/'>Krystal Perez</a></li>
+		<li><a href='http://josephsoto.github.io/homework/'>Joe Soto</a></li>
+		<li><a href='http://ystrohm.github.io/homework/'>Yuri Strohm</a></li>
+		<li><a href='http://amyszatkowski.github.io/homework/'>Amy Szatkowski</a></li>
+		<li><a href='http://athoen.github.io/homework/'>Andrea Thoen</a></li>
+	</ul>
+</article>
+
+<script src='dist/coderdeck.min.js'></script>
+
+<!-- Prettify -->
+<script src="src/prettify.js"></script>
+
+
+<script>
+	$(function() {
+		$.deck('.slide');
+	});
+</script>
+</body>
+</html>
+
